@@ -1,0 +1,23 @@
+angsurank<- function(num,Nilai,i,t,m=TRUE){
+  j = i/m
+  n = t*m
+  v = 1/(1+j)
+  switch(num, 
+         satu= {
+           AnAwal= Nilai/((1-v^n)/j)
+           cat("PV daru annuitas akhir=",AnAwal,"\n")
+         },
+         dua = {
+           SnAwal= Nilai/((((1+j)^n)-1)/j)
+           cat("NA daru annuitas akhir=",SnAwal,"\n")
+         },
+         tiga= {
+           AnAkhir= Nilai/((1-v^n)/j*V)
+           cat("PV daru annuitas awal=",AnAwal,"\n")
+         },
+         empat= {
+           SnAkhir= Nilai/(((1+j)^n-1)/j*V)
+           cat("NA daru annuitas awal=",SnAwal,"\n")
+         }
+  )
+}
