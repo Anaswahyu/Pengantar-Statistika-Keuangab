@@ -1,0 +1,18 @@
+FungsiPV <- function(num, A, i, t, m=TRUE)
+  switch(num, 
+         satu= {
+           tunggal = A/(1+i*t)
+           print(tunggal)
+         },
+         dua= {
+           majemuknominal = A/(1+i/m)^(m*t)
+           print(majemuknominal)
+         },
+         tiga= {
+           kontinu = A/(exp(i*t))
+           print(kontinu)
+         }
+  )
+#keterangan
+# k = modal, i = bunga, t = tahun, m = banyak pemberian bunga dalam 
+#pilih (1:bunga tunggal, 2:bunga majemuk(tahunan), 3:bunga majemuk nominal, 4: bunga majemuk kontinu)
