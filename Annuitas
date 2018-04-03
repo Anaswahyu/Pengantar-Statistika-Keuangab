@@ -1,0 +1,17 @@
+AnnuitasAkhirAwal <- function(num, k, i, n)
+  switch(num, 
+         satu= {
+           v= 1/(1+i)
+anAwal= k*(1-v^n)/(i*v)
+SnAwal= k*((1+i)^n-1)/(i*v)
+           print(anAwal)
+           print(SnAwal)
+         },
+         dua= {
+           v= 1/(1+i)
+           anAkhir= k*(1-v^n)/i
+           SnAkhir= k*((1+i)^n-1)/i
+           print(anAkhir)
+           print(SnAkhir)
+         }
+  )
